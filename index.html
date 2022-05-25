@@ -484,7 +484,8 @@
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="next" id=bttn onclick="plusSlides(1)" >&#10095;</a>
+
           </div>
 
           <div style="text-align: center">
@@ -508,10 +509,12 @@
 //   slides[slideIndex-1].style.display = "block";
 //   setTimeout(showSlides, 5000); 
 // }
+            // let bttn= document.getElementById("bttn")
+            // bttn.addEventListener("click",plusSlides(1),false);
             let slideIndex = 1;
             showSlides(slideIndex);
 
-            function plusSlides(n) {
+            window.plusSlides=function(n) {
               showSlides((slideIndex += n));
             }
 
