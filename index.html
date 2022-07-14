@@ -229,8 +229,21 @@
           opacity: 1;
         }
       }
+      @media screen and (max-width: 1420px){
+        .card-grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 80px;
+        width: 100%; 
+        /* padding: 1rem; */
+      }
+        .btn1 {
+        top: 1rem;
+        margin-left: 0rem;
+      }
+      }
   
-      @media screen and (max-width: 820px) {
+      @media screen and (max-width: 1270px) {
         .prev,
         .next,
         .text {
@@ -243,16 +256,23 @@
         width: 100%; 
         /* padding: 1rem; */
       }
+      .localgrid{
+        /* display: grid;
+        grid-template-columns: auto auto; */
+        /* colum-gap: 20px; */
+        /* width: 100%;  */
+        /* padding: 1rem; */
+      }
       .icon_a{
         width: 100px;
         height: 50px;
-        margin-left: 120px;
+        margin-left: 0px;
   
       }
       .ifilm{
         margin-top: 30px;
         height: 50px;
-        margin-right: 40px;
+        margin-right: 10px;
       }
       .igame{
         height: 60px;
@@ -267,6 +287,21 @@
       }
       
   
+      }
+      @media screen and (max-width: 812px) {
+
+        .icon_a{
+        width: 100px;
+        height: 50px;
+        margin-left: 120px;
+  
+      }
+      .ifilm{
+        margin-top: 30px;
+        height: 50px;
+        margin-right: 40px;
+      }
+
       }
   
       /* On smaller screens, decrease text size */
@@ -342,15 +377,15 @@
     <!--This is a banner for the main page.-->
     <div class="single">
       <header>
-        <h1 class="name">AlejandroMarcovich.com</h1>
+        <h1 class="name" style="margin-left: 30px;">Alejandro Marcovich</h1>
       </header>
-      <nav class="outline">
+      <!-- <nav class="outline">
         <ul class="banner_list">
           <li class="li-2">Production Projects</li>
           <li class="li-2">Movie Reviews</li>
           <li class="li-2">Gaming</li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
 
     <!--Next part is the body of the home page. There are multiple parts to this section.

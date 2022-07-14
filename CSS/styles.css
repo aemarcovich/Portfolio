@@ -37,7 +37,7 @@ body {
 .name {
   color: #ec9333;
   text-shadow: 2px 2px 0px #200c0c;
-
+  margin-left: 20px;
 }
 .pagetitle{
   text-align: center;  
@@ -297,7 +297,7 @@ a:focus {
   background-color: #16253d;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1650px) {
   .profile {
     /* display: block; */
     margin: 0;
@@ -320,6 +320,16 @@ a:focus {
     width: 96.5%;
 
   }
+  .btn1 {
+
+    margin-left: 0rem;
+
+}
+}
+@media screen and (max-width: 1410px){
+  .btn1 {
+    margin-left: 13rem;
+     }
 }
 
 
@@ -396,6 +406,11 @@ Such as for a Iphone*/
 
   }
 
+  @media screen and (max-width: 600px){
+    .btn1 {
+      margin-left: 0rem;
+       }
+  }
 }
     @media screen and (max-width: 500px) {
       .prev,
